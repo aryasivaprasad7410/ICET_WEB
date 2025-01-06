@@ -1,0 +1,61 @@
+6. Create a html registration form and validate the form using JavaScript
+Registration.html
+<html>
+<head>
+<title>Registeration Form</title>
+<link rel="stylesheet" href="registration.css">
+<script src="registration.js"></script>
+</head>
+<body>
+<centre>
+<form name="myForm" style="border:3px solid black;width:500px;" onsubmit="return
+validateForm();">
+<b><h2 id="head1">Register Here</h2></b>
+<label for="finame">First Name:</label>
+<input type="text" placeholder="Enter your First Name" name="finame" id="fname"><br>
+<label for="miname">Middle Name:</label>
+<input type="text" placeholder="Enter your Middle Name" name="mname"
+id="mname"><br>
+<label for="laname">Last Name:</label>
+<input type="text" placeholder="Enter your Last Name" name="laname" id="lname" ><br>
+<label for="aname">Address:</label>
+<textarea type="text" placeholder="Enter your Address here" name="address" id="addres"
+rows="" cols="33" ></textarea><br>
+<label id="dobi">D O B:</label>
+<input type="date" id="dob" name="dobi"><br><br>
+<label id="dobir">Gender:</label>
+<div class="gender">
+<input type="radio" name="gender" value="male">Male
+<input type="radio" name="gender" value="female">Female
+<input type="radio" name="gender" value="other">Other<br><br>
+</div>
+<label id="mob">Mobile No:</label>
+<input type="text" placeholder="Enter Mobile Number here" name="mobno"
+id="mobnu"><br>
+<label id="em">Email:</label>
+<input type="text" placeholder="Enter your Email here" name="Email" id="email"><br>
+<label id="course">Previous<br>Course:</label>
+<input type="text" placeholder="Type here" name="coname" id="cname" ><br>
+<br><label for="" id="skill">Skills:</label>
+<div class="op">
+<input type="checkbox" id="python1" name="python" value="">
+<label for="">Python</label>
+<input type="checkbox" id="python2" name="python" value="">
+<label for="">Python</label>
+<input type="checkbox" id="python3" name="python" value="">
+<label for="">Python</label>
+</div>
+<div id="course1"><label >Course:</label></div>
+<select name="course" id="li">
+<option value="none" selected >Select an Option</option>
+<option value="mba">MBA</option>
+<option value="mca">MCA</option>
+<option value="mtech">M.TECH</option>
+<option value="btech">B.TECH</option>
+</select><br><br>
+<button type="submit">Submit</button>
+&nbsp; &nbsp; &nbsp; <button type="reset" value="Reset">Reset</button>
+</form>
+</centre>
+</body>
+</html>

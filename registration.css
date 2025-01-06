@@ -1,0 +1,94 @@
+h2{
+    color:rgb(188, 18, 46);
+    }
+    #fname{
+    margin-left:12px;
+    width:250px;
+    height:40px;
+    }
+    #mname{
+    margin-top:12px;
+    width:250px;
+    height:40px;
+    }
+    #lname{
+    margin-top:12px;
+    margin-left:19px;
+    width:250px;
+    height:40px;
+    }
+    #addres{
+    margin-top:12px;
+    margin-left:34px;
+    width:252px;
+    }
+    #dob
+    {
+    margin-left:44px;
+    width:250px;
+    height:40px;
+    margin-top:12px;
+    }
+    #dobir{
+    padding-right: 304px;
+    }
+    .gender{
+    margin-left: 15px;
+    }
+    #mob{
+    margin-left:-19px;
+    }
+    #mobnu
+    {
+    margin-top:12px;
+    width:250px;
+    height:40px;
+    margin-left: 26px;
+    }
+    #em{
+    margin-left:-20px;
+    }
+    #email
+    {
+    margin-top:12px;
+    width:250px;
+    height:40px;
+    margin-left:60px;
+    }
+    #cname
+    {
+    margin-top:-29px;
+    width:250px;
+    height:40px;
+    margin-left:79px;
+    }
+    #course
+    {
+    display: flex;
+    margin-top: 17px;
+    margin-left: 65px;
+    }
+    #skill{
+    margin-top: 12px;
+    margin-left:-330px;
+    }
+    .op{
+    margin-left: 27px;
+    }
+    #course1
+    {
+    margin-left: -330;
+    margin-top: 27px;
+    }
+    #li{
+    margin-top: -18px;
+    width:250px;
+    height:40px;
+    margin-left: 63px;
+    }
+    button{
+    height: 29px;
+    font-size: medium;
+    font-weight: 600;
+    cursor: pointer;
+    }
