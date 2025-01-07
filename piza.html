@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pizza Shop 2.0</title>
+    <script>
+        function validateForm() {
+            const name = document.forms["pizzaForm"]["name"].value;
+            const instructions = document.forms["pizzaForm"]["instructions"].value;
+
+            // Validate name (only alphabets and less than 15 characters)
+            const nameRegex = /^[A-Za-z]+$/;
+            if (!nameRegex.test(name) || name.length > 15) {
+                alert("Name must only contain alphabets and be less than 15 characters.");
+                return false;
+            }
+
+            // Validate delivery instructions (less than 15 characters)
+            if (instructions.length > 15) {
+                alert("Delivery instructions must be less than 15 characters.");
+                return false;
+            }
+
+            alert("Order successfully submitted!");
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <h2>Pizza Shop 2.0</h2>
+    <form name="pizzaForm" onsubmit="return validateForm()">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label>Pizza Topping:</label><br>
+        <input type="radio" id="supreme" name="topping" value="Supreme">
+        <label for="supreme">Supreme</label><br>
+        <input type="radio" id="vegetarian" name="topping" value="Vegetarian">
+        <label for="vegetarian">Vegetarian</label><br>
+        <input type="radio" id="hawaiian" name="topping" value="Hawaiian">
+        <label for="hawaiian">Hawaiian</label><br><br>
+
+        <label for="sauce">Pizza Sauce:</label><br>
+        <select id="sauce" name="sauce">
+            <option value="Tomato">Tomato</option>
+            <option value="Barbecue">Barbecue</option>
+            <option value="Pesto">Pesto</option>
+        </select><br><br>
+
+        <label>Optional Extras:</label><br>
+        <input type="checkbox" id="extraCheese" name="extras" value="Extra Cheese">
+        <label for="extraCheese">Extra Cheese</label><br>
+        <input type="checkbox" id="glutenFree" name="extras" value="Gluten Free Base">
+        <label for="glutenFree">Gluten Free Base</label><br><br>
+
+        <label for="instructions">Delivery Instructions:</label><br>
+        <textarea id="instructions" name="instructions" rows="3" cols="30"></textarea><br><br>
+
+        <button type="submit">Send my Order</button>
+    </form>
+</body>
+</html>
